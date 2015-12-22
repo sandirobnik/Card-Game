@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vojna projektov odprte kode</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="js/jquery-1.6.2.min.js"></script>
+		<script src="js/karte.js"></script>
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="vsebina">
+			<div class="navodila">
+				<h1>Vojna projektov odprte kode</h1>
+				<p>
+					"Vojna projektov odprte kode" je igra s kartami, kjer igralec igra proti računalniku.
+					Računalnik karte premeša in razdeli na dva kupa kart. Vsak igralec prejme
+					svoj kup kart, oba vidita samo vrhnjo karto. Z igro prične igralec. Vsaka karta
+					vsebuje 5 podatkov o odprtokodnem projektu, ki ga prikazuje karta. Igralec,
+					ki trenutno igra, izbere poljuben podatek. Drugi igralec pogleda isti podatek
+					na svoji karti. Igralec z višjo vrednost zmaga, zato vzame svojo in
+					nasprotnikovo vrhnjo karto, ju prenese na dno svojega kupa in nadaljuje z
+					igro tako, da izbere novo vrednost. Če imata oba igraleca enako
+					vrednost, potem zmaga tisti, ki je zmagal v prejšnji potezi. Igra se konča,
+					ko eden od igralcev pobere vse karte in s tem zmaga.
+				</p>
+			</div>
+			<div class="novaigra">
+				<div id="sporocilo"></div>
+				<button onclick="novaIgraFun()" type="button" id="igraButton" class="igranadaljuj"></button>
+			</div>
+			<div class="igra">
+				<div class="zeleniOne"></div>
+				<div class="zeleniTwo"></div>
+				<div class="modraOne"></div>
+				<div class="modraTwo"></div>
+				<div class="kartaOneOsnovna"></div>
+				<div class="kartaTwoOsnovna"></div>
+				<div class="kartaOneInnerOsnovna"></div>
+				<div class="kartaTwoInnerOsnovna"></div>
+				<div id="racunalnikStKart"></div>
+				<div id="igralecStKart"></div>
+				<div class="kartaOne">
+					<div id="nazivOne"><span></span></div>
+					<div id="slikaOne"></div>
+					<div id="tipOne"><span></span></div>
+					<div id="vrednostOne">Vrednost:</div> 			<div id="vrednostVredOne"></div> 	<div id="vrednostVredIzbranaOne"></div>
+					<div id="stMesecevOne">Starost:</div> 			<div id="stMesecevVredOne"></div> 	<div id="stMesecevVredIzbranaOne"></div>
+					<div id="stVrsticOne">Vrstic kode:</div> 		<div id="stVrsticVredOne"></div> 	<div id="stVrsticVredIzbranaOne"></div>
+					<div id="stRazvijalcevOne">Razvijalcev:</div> 	<div id="stRazvijalcevVredOne">		</div> <div id="stRazvijalcevVredIzbranaOne"></div>
+					<div id="ocenaOne">Ocena:</div> 				<div id="ocenaVredOne"></div> 		<div id="ocenaVredIzbranaOne"></div>
+					<div id="spodnjiRobOne"></div>
+				</div>
+				<div class="kartaTwo">
+					<div id="nazivTwo"><span></span></div>
+					<div id="slikaTwo"></div>
+					<div id="tipTwo"><span></span></div>
+					<div id="vrednostTwo">Vrednost:</div> 			<div id="vrednostVredTwo"></div> 	<div id="vrednostVredIzbranaTwo"></div>
+					<div id="stMesecevTwo">Starost:</div> 			<div id="stMesecevVredTwo"></div> 	<div id="stMesecevVredIzbranaTwo"></div>
+					<div id="stVrsticTwo">Vrstic kode:</div> 		<div id="stVrsticVredTwo"></div> 	<div id="stVrsticVredIzbranaTwo"></div>
+					<div id="stRazvijalcevTwo">Razvijalcev:</div> 	<div id="stRazvijalcevVredTwo">		</div> <div id="stRazvijalcevVredIzbranaTwo"></div>
+					<div id="ocenaTwo">Ocena:</div> 				<div id="ocenaVredTwo"></div> 		<div id="ocenaVredIzbranaTwo"></div>
+					<div id="spodnjiRobTwo"></div>
+				</div>
+			</div>
+			<div class="viri">
+				Viri	
+			</div>
+			<div class="viriopis">
+				Podatki s kart so pravi podatki s septembra 2012, pridobljeni s spletne
+				strani <a href="http://www.ohloh.net/" target="_blank">www.ohloh.net</a>.
+				Večina logotipov je z iste spletne strani, ostali so z uradnih spletnih
+				strani odprtokodnega projekta. Ozadje spletne strani je bilo generirano na
+				<a href="http://mudcu.be/bg/" target="_blank">mudcu.be/bg</a>, ozadje kart
+				pa na <a href="http://patternizer.com/" target="_blank">patternizer.com</a>.
+			</div>
+		</div>
+	</body>
+</html>
